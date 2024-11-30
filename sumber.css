@@ -1,0 +1,140 @@
+/* Import custom font */
+@font-face {
+    font-family: 'Kenarose';
+    src: url('fonts/Kenarose.otf') format('opentype'),
+         url('fonts/Kenarose.ttf') format('truetype');
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Kenarose', sans-serif;
+    font-size: 16px;
+    color: #333;
+    background-color: #F6EFBD;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Reset margin and padding */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    background: burlywood;
+    text-align: center;
+    top: 0;
+    position: sticky;
+    width: 100%;
+    z-index: 1000;
+    margin: 0;
+}
+
+ul li {
+    display: inline-block;
+    position: relative;
+}
+
+ul li a {
+    display: block;
+    padding: 20px 25px;
+    color: #FFF;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+ul li ul.dropdown li {
+    display: block;
+    background-color: #CEDF9F;
+    min-width: 80px;
+    box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.8);
+}
+
+ul li ul.dropdown {
+    width: auto;
+    background: rgb(196, 157, 107);
+    position: absolute;
+    z-index: 999;
+    display: none;
+    top: 60px;
+}
+
+ul a:hover {
+    color: #914F1E;
+}
+
+ul li:hover ul.dropdown {
+    display: block;
+}
+
+h2 {
+    text-align: center;
+    font-size: 27px;
+    margin: 15px auto;
+    line-height: 1.2;
+    color: #522a0b;
+}
+
+.sdgs {
+    font-size: 16px;
+    color: #7d4113;
+    text-align: justify;
+    background-color: #f6f3d7;
+    border: 5px solid #c69a65; /* Single border around the text */
+    border-radius: 35px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 15px; /* Padding inside the border */
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto; /* Centers the element without extra containers */
+    margin-bottom: 40px;
+}
+
+.sdgs p {
+    margin: 15px;
+    line-height: 1.5;
+}
+
+.footer {
+    width: 100%;
+    text-align: center;
+    background-color: transparent;
+}
+
+.footer img {
+    width: 100%;
+    display: block;
+}
+
+.sdgs a {
+    color: #7d4113;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.sdgs a:hover {
+    color: #522a0b;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+
+}
